@@ -1,5 +1,6 @@
 import React from 'react'
+import './Header.css'
 
 export default function Header() {
-  return <h1> Calculator </h1>
+  return <h1 id='header'> Calculator </h1>
 }

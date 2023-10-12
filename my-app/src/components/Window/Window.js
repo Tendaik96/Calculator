@@ -1,7 +1,8 @@
 import React from 'react'
+import './Window.css'
 
 export default function Window() {
   return (
-    <div>Window</div>
+    <div id='window'></div>
   )
 }
