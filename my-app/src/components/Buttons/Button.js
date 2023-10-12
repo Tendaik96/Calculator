@@ -3,6 +3,6 @@ import './Button.css'
 
 export default function Button({num}) {
   return (
-    <h3 className='button'>{num}</h3>
+    <button className='button'>{num}</button>
   )
 }

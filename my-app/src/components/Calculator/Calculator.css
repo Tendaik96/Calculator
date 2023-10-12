@@ -2,7 +2,44 @@
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     height: 80%;
-    width: 60%;
+    width: 40%;
     margin: 10px auto;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.operators{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-evenly; 
+    width: 85%;
+}
+
+.val-op-container{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+}
+
+.value-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+.equals-container {
+    
+    width: 25%;
+
+}
+
