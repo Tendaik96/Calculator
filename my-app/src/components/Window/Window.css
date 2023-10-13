@@ -1,7 +1,7 @@
 #window{
     width: 85%;
     height: 15%;
-    border-radius: 30px;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-    
+    border-radius: 25px;
+    background-image: linear-gradient(whitesmoke, 5%, white, whitesmoke);
+    box-shadow: inset 3px 3px 3px 0px gray;
 }
