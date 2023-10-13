@@ -1,6 +1,28 @@
 .button{
-    background-color: red;
+    background-image: linear-gradient(grey, white, gray);
     text-align: center;
-    width: 31%;
-    font-size: 50px;
+    width: 28%;
+    font-size: 45px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
 }
+
+.button:last-child{
+    background-image: linear-gradient(purple, white, purple);
+    font-weight: bold;
+
+    
+}
+
+.button:hover {
+    box-shadow: black 0px 50px 100px -20px, black 0px 30px 60px -30px, black 0px -2px 6px 0px inset;
+}
+
+.button:last-child:hover{
+        box-shadow: brown 0px 50px 100px -20px, brown 0px 30px 60px -30px, brown 0px -2px 6px 0px inset;
+}
+
+
+

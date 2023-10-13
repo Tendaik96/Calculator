@@ -1,6 +1,14 @@
 .operator{
-    background-color: red;
+    background-color: black;
     text-align: center;
     width: 20%;
     font-size: 50px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.operator:hover{
+        box-shadow: gray 0px 50px 100px -20px, gray 0px 30px 60px -30px, gray 0px -2px 6px 0px inset;
 }
