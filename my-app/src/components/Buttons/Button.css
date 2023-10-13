@@ -1,5 +1,5 @@
 .button{
-    background-image: linear-gradient(grey, white, gray);
+    background-image: linear-gradient(grey, 10%, white, gray);
     text-align: center;
     width: 28%;
     font-size: 45px;
@@ -10,7 +10,7 @@
 }
 
 .button:last-child{
-    background-image: linear-gradient(purple, white, purple);
+    background-image: linear-gradient(purple, 10%, white, purple);
     font-weight: bold;
 
     
