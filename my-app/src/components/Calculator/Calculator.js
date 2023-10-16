@@ -6,7 +6,7 @@ import Button from '../Buttons/Button';
 import Operator from '../Operator/Operator';
 import Equals from '../Equals/Equals';
 
-const nums = [];
+let nums = [];
 
 export default function Calculator() {
  
@@ -18,16 +18,17 @@ export default function Calculator() {
   function click(e) {
     let value = e.target.value;
     
-    if(value !== '='){
+    if (value === "") {
+      setTotal("0");
+      nums = [];
+    } else if(value !== '='){
     nums.push(value);
     let toget = nums.join('');
     console.log(toget);
     setTotal(toget);
       
-    }  
-    else {
-      setTotal('Total');
-      
+    } else {
+      setTotal("Total");
     }
   } 
 
@@ -56,7 +57,7 @@ export default function Calculator() {
           <Button num={1} value="1" onClick={click}/>
           <Button num={0} value="0" onClick={click}/>
           <Button num={"."} value="." onClick={click}/>
-          <Button num={"c"} value=" " onClick={click}/>
+          <Button num={"c"} value="" onClick={click}/>
         </div>
         <div className="equals-container">
           <Equals operation={"="} value="=" onClick={click}/>

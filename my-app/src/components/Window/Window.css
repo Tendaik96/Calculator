@@ -7,6 +7,6 @@
     color: black;
     font-size: 50px;
     text-align: end;
-    padding-right: 10px;
-    overflow: hidden;
+    padding-right: 15px;
+    overflow-y: hidden;
 }
