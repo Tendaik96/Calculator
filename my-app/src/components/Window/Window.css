@@ -6,4 +6,6 @@
     box-shadow: inset 3px 3px 3px 0px gray;
     color: black;
     font-size: 50px;
+    direction: rtl;
+    padding-right: 10px;
 }

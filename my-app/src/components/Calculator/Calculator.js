@@ -7,20 +7,39 @@ import Operator from '../Operator/Operator';
 import Equals from '../Equals/Equals';
 
 export default function Calculator() {
-const [value, setValue] = useState(0)
+ 
+  const [total, setTotal] = useState(0);
+
+  const nums = [];
+  
 
   function click(e) {
-    setValue(e.target.value)
+    let value = e.target.value;
+    
+    if(value !== '='){
+    nums.push(value);
+    let toget = nums.toString();
+    console.log(toget);
+    setTotal(toget);
+      
+    } 
+    else {
+      setTotal('Total');
+      
+    }
   } 
+
+  //console.log(nums)
+  
 
   return (
     <div id="calc">
-      <Window value={value} />
+      <Window value={total} />
       <div className="operators">
         <Operator operation={"+"} value="+" onClick={click} />
         <Operator operation={"-"} value="-" onClick={click} />
         <Operator operation={"x"} value="*" onClick={click} />
-        <Operator operation={"%"} value="%" onClick={click} />
+        <Operator operation={"/"} value="/" onClick={click} />
       </div>
       <div className="val-op-container">
         <div className="value-container">
