@@ -7,18 +7,17 @@ import Operator from '../Operator/Operator';
 import Equals from '../Equals/Equals';
 
 let nums = [];
+export let results = []
 
 export default function Calculator() {
  
   const [total, setTotal] = useState(0);
 
-  
-  
-
   function click(e) {
     let value = e.target.value;
     if (nums[0] === 'x' || '*' || '/') {
       setTotal("Invalid");
+      
     }
     if (value === "") {
       setTotal("0");
@@ -26,12 +25,13 @@ export default function Calculator() {
     } else if(value !== '='){
     nums.push(value);
     let toget = nums.join('');
-    console.log(toget);
-    setTotal(toget);
+    //console.log(toget);
+      setTotal(toget);
       
     } else {
       let ans = eval(nums.join(''))
       setTotal(ans);
+      results.push(ans);
       nums = [];
     }
   } 
