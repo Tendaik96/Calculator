@@ -6,11 +6,13 @@ import Button from '../Buttons/Button';
 import Operator from '../Operator/Operator';
 import Equals from '../Equals/Equals';
 
+const nums = [];
+
 export default function Calculator() {
  
   const [total, setTotal] = useState(0);
 
-  const nums = [];
+  
   
 
   function click(e) {
@@ -18,11 +20,11 @@ export default function Calculator() {
     
     if(value !== '='){
     nums.push(value);
-    let toget = nums.toString();
+    let toget = nums.join('');
     console.log(toget);
     setTotal(toget);
       
-    } 
+    }  
     else {
       setTotal('Total');
       
