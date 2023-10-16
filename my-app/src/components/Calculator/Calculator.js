@@ -1,44 +1,44 @@
 import React from 'react'
 import './Calculator.css';
-//import { useState } from 'react';
+import { useState } from 'react';
 import Window from '../Window/Window';
 import Button from '../Buttons/Button';
 import Operator from '../Operator/Operator';
 import Equals from '../Equals/Equals';
 
 export default function Calculator() {
- /*  const [value, setValue] = useState(0)
+const [value, setValue] = useState(0)
 
-  function handleChange(e) {
+  function click(e) {
     setValue(e.target.value)
-  } */
+  } 
 
   return (
     <div id="calc">
-      <Window />
+      <Window value={value} />
       <div className="operators">
-        <Operator operation={"+"} />
-        <Operator operation={"-"} />
-        <Operator operation={"x"} />
-        <Operator operation={"%"} />
+        <Operator operation={"+"} value="+" onClick={click} />
+        <Operator operation={"-"} value="-" onClick={click} />
+        <Operator operation={"x"} value="*" onClick={click} />
+        <Operator operation={"%"} value="%" onClick={click} />
       </div>
       <div className="val-op-container">
         <div className="value-container">
-          <Button num={9} />
-          <Button num={8} />
-          <Button num={7} />
-          <Button num={6} />
-          <Button num={5} />
-          <Button num={4} />
-          <Button num={3} />
-          <Button num={2} />
-          <Button num={1} />
-          <Button num={0} />
-          <Button num={'.'} />
-          <Button num={'c'} />
+          <Button num={9} value="9" onClick={click}/>
+          <Button num={8} value="8" onClick={click}/>
+          <Button num={7} value="7" onClick={click}/>
+          <Button num={6} value="6" onClick={click}/>
+          <Button num={5} value="5" onClick={click}/>
+          <Button num={4} value="4" onClick={click}/>
+          <Button num={3} value="3" onClick={click}/>
+          <Button num={2} value="2" onClick={click}/>
+          <Button num={1} value="1" onClick={click}/>
+          <Button num={0} value="0" onClick={click}/>
+          <Button num={"."} value="." onClick={click}/>
+          <Button num={"c"} value=" " onClick={click}/>
         </div>
-        <div className='equals-container'>
-          <Equals operation={'='}/>
+        <div className="equals-container">
+          <Equals operation={"="} value="=" onClick={click}/>
         </div>
       </div>
     </div>
