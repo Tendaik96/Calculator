@@ -17,7 +17,9 @@ export default function Calculator() {
 
   function click(e) {
     let value = e.target.value;
-    
+    if (nums[0] === 'x' || '*' || '/') {
+      setTotal("Invalid");
+    }
     if (value === "") {
       setTotal("0");
       nums = [];
@@ -28,7 +30,9 @@ export default function Calculator() {
     setTotal(toget);
       
     } else {
-      setTotal("Total");
+      let ans = eval(nums.join(''))
+      setTotal(ans);
+      nums = [];
     }
   } 
 
