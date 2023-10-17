@@ -17,7 +17,6 @@ export default function Calculator() {
     let value = e.target.value;
     if (nums[0] === 'x' || '*' || '/') {
       setTotal("Invalid");
-      
     }
     if (value === "") {
       setTotal("0");
@@ -37,7 +36,6 @@ export default function Calculator() {
   } 
 
   //console.log(nums)
-  
 
   return (
     <div id="calc">

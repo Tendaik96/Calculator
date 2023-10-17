@@ -9,7 +9,7 @@ function App() {
     <div className='main-background'>
       <Header />
       <Calculator />
-      <History search={results} />
+      {/* <History search={results} /> */}
     </div>
   );
 }
