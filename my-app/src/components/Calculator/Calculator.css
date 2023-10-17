@@ -5,6 +5,7 @@
     height: 80%;
     max-height: 540px;
     width: 35%;
+    min-width: 320px;
     margin: 10px auto;
     border-radius: 30px;
     display: flex;
