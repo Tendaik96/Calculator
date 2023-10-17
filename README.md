@@ -27,4 +27,4 @@ CSS: Styling for the app's visual design.
 
 
 ## Contributors
-Tendai Karuwo (@TendaiK96)
+Tendai Karuwo (@Tendaik96)
